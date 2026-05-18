@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Υπολογιστικό σύστημα</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Greek:wght@400;500;700&family=Noto+Serif:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f4f1eb;
+      --paper: #fffdf9;
+      --ink: #1f1f1f;
+      --muted: #595959;
+      --accent: #1e5f74;
+      --line: #d8d2c8;
+      --soft: #f8f5ef;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: "Noto Sans Greek", Arial, sans-serif;
+      line-height: 1.75;
+    }
+    .page {
+      max-width: 900px;
+      margin: 32px auto;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      box-shadow: 0 12px 30px rgba(0,0,0,.07);
+      padding: 56px 52px;
+    }
+    .topline {
+      text-align: center;
+      border-bottom: 2px solid var(--line);
+      padding-bottom: 18px;
+      margin-bottom: 34px;
+    }
+    h1 {
+      font-family: "Noto Serif", Georgia, serif;
+      font-size: clamp(28px, 4vw, 40px);
+      margin: 0;
+      line-height: 1.2;
+    }
+    h2 {
+      font-family: "Noto Serif", Georgia, serif;
+      font-size: 24px;
+      margin: 30px 0 12px;
+      color: var(--accent);
+    }
+    p { margin: 0 0 14px; font-size: 17px; text-align: justify; }
+    .definition {
+      background: var(--soft);
+      border-left: 4px solid var(--accent);
+      padding: 18px 18px 14px;
+      margin: 18px 0 24px;
+    }
+    ul { margin: 8px 0 16px 22px; }
+    li { margin-bottom: 8px; }
+    .sources {
+      margin-top: 34px;
+      padding-top: 18px;
+      border-top: 2px solid var(--line);
+    }
+    .sources a {
+      color: var(--accent);
+      text-decoration: none;
+      word-break: break-word;
+    }
+    .sources a:hover { text-decoration: underline; }
+    .note {
+      margin-top: 24px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+    @media (max-width: 720px) {
+      .page { margin: 12px; padding: 26px 18px; }
+      p { font-size: 16px; text-align: left; }
+      h2 { font-size: 21px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="topline">
+      <h1>Υπολογιστικό σύστημα</h1>
+    </header>
+
+    <section>
+      <h2>Ορισμός</h2>
+      <div class="definition">
+        <p>Το υπολογιστικό σύστημα είναι ένα ολοκληρωμένο σύνολο που αποτελείται από το υλικό (hardware) και το λογισμικό (software), τα οποία συνεργάζονται ώστε ο υπολογιστής να μπορεί να δέχεται δεδομένα, να τα επεξεργάζεται και να παράγει αποτελέσματα.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Ανάλυση της έννοιας</h2>
+      <p>Ο όρος «υπολογιστικό σύστημα» δεν αναφέρεται μόνο στα εξαρτήματα που μπορούμε να δούμε εξωτερικά σε έναν υπολογιστή. Περιγράφει τη συνολική λειτουργία ενός υπολογιστή ως συστήματος, στο οποίο κάθε μέρος έχει συγκεκριμένο ρόλο και όλα τα μέρη συνεργάζονται μεταξύ τους.</p>
+      <p>Το υλικό περιλαμβάνει τα φυσικά μέρη του υπολογιστή, όπως την οθόνη, το πληκτρολόγιο, το ποντίκι, την κεντρική μονάδα και τις υπόλοιπες συσκευές εισόδου και εξόδου. Το λογισμικό περιλαμβάνει τα προγράμματα που δίνουν εντολές στο υλικό και καθορίζουν τον τρόπο με τον οποίο θα λειτουργήσει ο υπολογιστής.</p>
+      <p>Χωρίς λογισμικό, το υλικό δεν μπορεί να εκτελέσει χρήσιμες λειτουργίες, ενώ χωρίς υλικό, το λογισμικό δεν μπορεί να λειτουργήσει. Για τον λόγο αυτό, το υπολογιστικό σύστημα πρέπει να αντιμετωπίζεται ως ενιαίο σύνολο, στο οποίο το υλικό και το λογισμικό είναι αλληλένδετα και απαραίτητα.</p>
+    </section>
+
+    <section class="sources">
+      <h2>Πηγές</h2>
+      <ul>
+        <li>Υπουργείο Παιδείας – Διαδραστικά Σχολικά Βιβλία, <a href="https://ebooks.edu.gr/ebooks/v/html/8547/2714/Pliroforiki_A-Lykeiou_html-empl/index1_1.html" target="_blank" rel="noopener noreferrer">Υλικό Υπολογιστών (Hardware)</a></li>
+        <li>Υπουργείο Παιδείας – Διαδραστικά Σχολικά Βιβλία, <a href="https://ebooks.edu.gr/ebooks/v/html/8547/2714/Pliroforiki_A-Lykeiou_html-empl/index1_2.html" target="_blank" rel="noopener noreferrer">Λογισμικό (Software)</a></li>
+        <li>Υπουργείο Παιδείας – Διαδραστικά Σχολικά Βιβλία, <a href="https://ebooks.edu.gr/ebooks/v/html/8547/2716/Pliroforiki_B-Lykeiou_html-empl/index3_1.html" target="_blank" rel="noopener noreferrer">Λογισμικό και Υπολογιστικό Σύστημα</a></li>
+      </ul>
+    </section>
+
+    <p class="note">Το κείμενο της σελίδας έχει διατυπωθεί σε επίσημο ύφος και βασίζεται σε εκπαιδευτικές πηγές του Υπουργείου Παιδείας.</p>
+  </main>
+</body>
+</html>
